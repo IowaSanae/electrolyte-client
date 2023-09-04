@@ -60,7 +60,6 @@ function Chat() {
     setMessage('');
     const response = await sendMess(message)
     if (!response) return
-    console.log(response, "ccdcd")
     if (listRoom)
       socketio.emit('message', { user: listRoom[0]?.shop_info, shop: data, roomid: listRoom[0]?.roomid, message: response });
 
