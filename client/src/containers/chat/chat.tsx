@@ -1,5 +1,6 @@
 //? LIBRARY
 import './style/chat.css';
+import axios from 'axios';
 import IMGS from '../../assets/imgs';
 import { memo, useCallback, useEffect, useState } from 'react';
 //? APPS
@@ -9,7 +10,7 @@ import { Rooms } from '../../types/room';
 import { useAppSelector } from '../../hooks/hooks';
 import { useCreateRoomMutation, useGetRoomsQuery } from '../../services/room/index.hook';
 import { ShopInterface } from '../../types/shop';
-import { Await } from 'react-router-dom';
+
 
 interface ProductShopModel {
   data: ShopInterface;
@@ -39,11 +40,30 @@ function Chat() {
     if (!dataRooms) return;
     dataRooms && setListRoom(dataRooms?.response);
   }, [dataRooms]);
-
-  const onAddMess = () => {
+  const sendMess = async (message: string) => {
+    const url = 'http://localhost:5000/generate';
+    const data = {
+      input_text: message
+    };
+    try {
+      const response = await axios.post(url, data);
+      if (response.status === 200) {
+        return response.data?.response[0]?.generated_text
+      }
+    } catch (error: any) {
+      console.error('Error:', error.message);
+    }
+  };
+  const onAddMess = async () => {
     if (listRoom)
-      socketio.emit('message', { user: data, shop: listRoom[0]?.shop_info, roomid: listRoom[0]?.roomid, message });
+      socketio.emit('message', { user: data, shop: listRoom[0]?.shop_info, roomid: listRoom[0]?.roomid, message: message });
     setMessage('');
+    const response = await sendMess(message)
+    if (!response) return
+    console.log(response, "ccdcd")
+    if (listRoom)
+      socketio.emit('message', { user: listRoom[0]?.shop_info, shop: data, roomid: listRoom[0]?.roomid, message: response });
+
   };
 
   const onToggleListChat = useCallback(() => {

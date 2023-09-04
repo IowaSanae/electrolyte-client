@@ -5,6 +5,7 @@ import { UserActions } from '../redux/userSlice';
 import { useNavigate } from 'react-router-dom';
 import { GetCurrentUser } from '../services/user/index.services';
 import { User } from '../types/user';
+import axios from 'axios';
 
 const useAuth = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const useAuth = () => {
           } else {
             toast.error(response.msg);
           }
-        } catch (error: any) {}
+        } catch (error: any) { }
       } else {
         setTimeout(() => {
           navigate('/login');
