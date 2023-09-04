@@ -1,0 +1,54 @@
+.YqIqug {
+  min-width: 1200px;
+  margin-bottom: 12px;
+}
+.YqIqug {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  height: 6.25rem;
+}
+.jb8bh0 {
+  display: flex;
+  padding-left: 1.125rem;
+}
+._4\+lJqn {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  display: flex;
+  align-items: flex-end;
+}
+.cart-page-header-wrapper {
+  display: flex;
+  align-items: center;
+  background: #1ba8ff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  height: 6rem;
+}
+
+.cart-page-header {
+  padding-left: 1.125rem;
+  display: flex;
+  flex: 1;
+}
+.cart-page-logo {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cart-page-logo__page-name {
+  margin-left: 0.9375rem;
+  border-left: 0.0625rem solid #fff;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  height: 1.875rem;
+  padding-left: 0.9375rem;
+  margin-bottom: 0.0625rem;
+  text-transform: capitalize;
+}

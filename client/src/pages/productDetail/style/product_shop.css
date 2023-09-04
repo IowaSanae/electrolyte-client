@@ -1,0 +1,40 @@
+.product_rating {
+  line-height: 54px;
+  margin: 0 30px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-areas: "dd ee ff";
+}
+.product_rating-item {
+  display: flex;
+  align-items: center;
+}
+.product_rating-item label span:last-child {
+  color: #1ba8ff;
+  width: 100%;
+  font-size: 1rem;
+}
+.product_rating-item span {
+  margin-right: 10px;
+  height: 100px;
+  font-size: 0.938rem;
+}
+@media only screen and (max-width: 880px) {
+  .response_shop-content {
+    flex-direction: column;
+  }
+  .product_rating {
+    margin: unset;
+  }
+}
+@media (max-width: 480px) {
+  .product_rating-content span {
+    margin-right: 5px !important;
+  }
+  .product_rating {
+    line-height: 25px;
+    grid-template-areas: "dd ee";
+  }
+}

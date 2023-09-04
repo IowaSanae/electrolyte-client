@@ -1,0 +1,120 @@
+.category-main {
+  padding-top: 20px;
+  padding-top: 15px;
+}
+
+.category-content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.category-header {
+  padding: 20px;
+  text-align: left;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+}
+.category-list {
+  display: flex;
+  overflow-x: auto;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 150px;
+  border: 0.5px solid rgb(231, 228, 228);
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  width: 25%;
+}
+.category-item {
+  border: none;
+}
+.category-image {
+  height: 4.375rem;
+  width: 4.375rem;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+.category-name {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  text-decoration: none;
+  line-height: 0.781rem;
+  height: 40px;
+  margin-bottom: 6.25px;
+  display: flex;
+  word-break: break-word;
+  overflow: hidden;
+  text-align: center;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.category-item:hover {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .category-main {
+    padding-bottom: 10px;
+  }
+  .category-header {
+    padding: 0.625rem;
+  }
+  .category-item {
+    height: unset;
+  }
+  .category-name {
+    font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .response-category {
+    width: 13%;
+  }
+}
+@media (max-width: 640px) {
+  .response-category {
+    width: 17%;
+  }
+}
+@media (max-width: 480px) {
+  .category-main {
+    padding-top: 20px;
+    padding-bottom: 0.625rem;
+  }
+  .category-header {
+    padding-top: 5px !important;
+    padding-left: 10px !important;
+    padding-right: unset !important;
+    padding-bottom: unset !important;
+  }
+  .category-list {
+    padding-bottom: 13px;
+    flex-wrap: nowrap !important;
+  }
+  .category-item {
+    margin-right: 5px;
+    flex-shrink: 0;
+    height: 100px;
+    width: 75px;
+  }
+  .category-name {
+    font-size: 0.625rem !important;
+    height: 26px;
+    margin-bottom: 6.25px;
+  }
+  .response-category {
+    width: 17%;
+  }
+}

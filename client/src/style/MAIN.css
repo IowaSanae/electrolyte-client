@@ -1,0 +1,31 @@
+.grid__full--width {
+  width: 100%;
+}
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.grid_colum-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6666667%;
+}
+.grid_colum-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+.grid_colum-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3333333%;
+}
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+.app {
+  overflow: hidden;
+}

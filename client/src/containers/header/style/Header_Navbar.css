@@ -1,0 +1,222 @@
+.Header {
+  background-color: rgb(27, 168, 255);
+}
+
+.Header__navbar--list {
+  margin: 10px 170px 0 0;
+  display: flex;
+  justify-items: center;
+  position: absolute;
+  right: 0;
+}
+.Header__nav--item {
+  margin: 0 8px;
+  position: relative;
+  min-height: 26px;
+}
+.Header__nav-user {
+  display: flex;
+  justify-items: center;
+  position: relative;
+}
+.Header__nav-user-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+}
+.Header__nav-user:hover .Header__nav-user-menu {
+  display: block;
+}
+.Header__nav-name {
+  margin-left: 4px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #fff;
+}
+.Header__nav-user-menu {
+  position: absolute;
+  z-index: 2;
+  padding-left: 0;
+  top: calc(100% + 6px);
+  right: 0;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 160px;
+  list-style: none;
+  box-shadow: 0 1px 5px rgba(189, 189, 189);
+  display: none;
+}
+.Header__nav-user-menu::after {
+  content: "";
+  border-style: solid;
+  border-width: 20px 30px;
+  border-color: transparent transparent #fff transparent;
+  right: 4px;
+  top: -29px;
+  position: absolute;
+  z-index: -1;
+}
+.Header__nav-user-menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 68%;
+  height: 8px;
+}
+
+.Header__nav-user-item a:hover {
+  background-color: #fafafa;
+  color: black;
+}
+
+.Header__nav-user-item--separate {
+  border-top: solid 1px rgb(0, 0, 0, 0.05);
+  padding: 0;
+}
+.Header__nav-user-item {
+  color: black;
+  font-size: 0.875rem;
+  padding: 6px 0;
+  display: block;
+  padding-left: 16px;
+}
+.Header__nav--item,
+.Header__nav--item--link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: white;
+}
+.Header__nav--item,
+.Header__nav--item--link,
+.Header__navbar--icon-link {
+  align-items: center;
+  display: flex;
+}
+
+.Header__nav--item:hover,
+.Header__nav--item--link:hover,
+.Header__navbar--icon-link:hover,
+.Header__navbar--icon-link:hover .Header__nav--item--link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.Header_notify {
+  width: 404px;
+  position: absolute;
+  top: 118%;
+  background-color: white;
+  right: 0;
+  border: solid 1px rgb(0, 0, 0, 0.1);
+  display: none;
+  cursor: default;
+  will-change: opacity transform;
+  transform-origin: (100%-32px) top;
+  animation: HeaderNOtifyGrowth ease-in 0.25s;
+  z-index: 10;
+  border-radius: 2px;
+}
+.Header__nav--item-has-notify:hover .Header_notify {
+  display: block;
+  color: white;
+}
+.Header-cart-notify-icon {
+  font-size: 0.625rem;
+  position: absolute;
+  padding: 1px 7px;
+  top: -1px;
+  right: 58px;
+  line-height: 0.875rem;
+  border-radius: 10px;
+  border: 2px solid #1ba8ff;
+  color: #1ba8ff;
+  background-color: #fff;
+}
+
+.Header_notify::before {
+  content: "";
+  z-index: 10;
+  border-style: solid;
+  border-width: 20px 30px;
+  border-color: transparent transparent #fff transparent;
+  right: 4px;
+  position: absolute;
+  top: -37px;
+}
+.Header_notify::after {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  width: 118px;
+  height: 31px;
+  right: 0;
+  top: -16px;
+}
+.Header_notify-header {
+  height: 40px;
+  background-color: white;
+}
+.Header_notify-header h3 {
+  color: #999;
+  margin: 0 0 0 12px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
+}
+.Header_notify-list {
+  padding-left: 0;
+}
+.Header_notify-item {
+  display: flex;
+}
+.Header_notify-item:hover {
+  background-color: #f7f7f7;
+  color: white;
+}
+.Header_notify-item--viewed {
+  background-color: white;
+}
+.Header_notify-link {
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+.Header_notify-img {
+  width: 48px;
+  object-fit: contain;
+}
+.Header_notify-infor {
+  margin-left: 12px;
+}
+.Header_notify-name {
+  color: black;
+  font-size: 0.875rem;
+  display: block;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+.Header_notify-description {
+  font-size: 0.75rem;
+  display: block;
+  color: #756f6e;
+  line-height: 1rem;
+  margin-top: 4px;
+}
+.Header__notify-footer {
+  color: black;
+  font-size: 0.938rem;
+  padding: 8px 48px;
+  text-align: center;
+  width: 100%;
+}
+.Header__notify-btn {
+  text-decoration: none;
+  font-weight: 400;
+}

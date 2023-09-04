@@ -1,0 +1,485 @@
+.electrolyte-search-item-result .electrolyte-page-controller {
+  margin: 1.25rem 0 3.75rem;
+}
+
+.electrolyte-search-item-result__items {
+  margin: 0.5rem 0 0;
+}
+
+.electrolyte-search-item-result__item {
+  margin: 0.3125rem 0;
+}
+
+.electrolyte-search-item-result > .spinner-container {
+  min-height: 212.375rem;
+}
+
+.stardust-dropdown {
+  position: relative;
+}
+
+.stardust-dropdown__item-body {
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.stardust-dropdown__item-body--open {
+  height: auto;
+  opacity: 1;
+}
+
+.folding-items__toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.folding-items__toggle.stardust-dropdown__item-body {
+  overflow: hidden;
+}
+
+.folding-items__toggle.stardust-dropdown__item-header {
+  cursor: pointer;
+  order: 1;
+}
+
+.folding-items__toggle.stardust-dropdown--open
+  > .stardust-dropdown__item-header {
+  display: none;
+}
+
+.electrolyte-filter-group {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.electrolyte-filter-group .electrolyte-filter {
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+
+.electrolyte-filter-group__header {
+  margin-bottom: 0.625rem;
+  font-weight: 500;
+}
+
+.electrolyte-filter-group__item-hint {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #929292;
+  margin-top: 0.5rem;
+  flex-basis: 100%;
+}
+
+.electrolyte-filter-group__toggle-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.625rem 0.5rem 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.electrolyte-filter-group__toggle-btn svg {
+  font-size: 0.4375rem;
+  margin-left: 0.625rem;
+}
+
+.stardust-popover {
+  position: relative;
+}
+
+.stardust-popover.focus-visible,
+.stardust-popover:focus-visible {
+  outline: 2px solid #000;
+  border-radius: 2px;
+}
+
+.stardust-popover__popover {
+  will-change: transform;
+  position: absolute;
+  z-index: -1;
+}
+
+.stardust-popover__popover--show {
+  z-index: 3;
+  -webkit-animation: popover-enter-animation 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+  animation: popover-enter-animation 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+  opacity: 1;
+}
+
+.stardust-popover__popover--border {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.stardust-popover__popover--hide {
+  -webkit-animation: popover-hide-animation 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+  animation: popover-hide-animation 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.stardust-popover__arrow {
+  z-index: 3;
+  position: absolute;
+  will-change: transform;
+}
+
+.stardust-popover__arrow--inner {
+  position: absolute;
+  left: -8px;
+  width: 0;
+  height: 0;
+}
+
+@-webkit-keyframes popover-enter-animation {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popover-enter-animation {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes popover-hide-animation {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes popover-hide-animation {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.stardust-input__element {
+  font-family: -apple-system, HelveticaNeue-Light, Helvetica Neue Light,
+    Helvetica Neue, Helvetica, Roboto, Droid Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  resize: none;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  padding: 4px 8px;
+  background: #f6f6f6;
+}
+
+.stardust-input__element:focus {
+  border-color: #f9c5bb;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #f9c5bb;
+}
+
+.stardust-input__element--invalid,
+.stardust-input__element--invalid:focus,
+.stardust-input__element:invalid {
+  border-color: #1ba8ff;
+  background-color: #fff1f1;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #1ba8ff;
+}
+
+.stardust-input__element--disabled,
+.stardust-input__element:disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
+
+.stardust-input__invalid-message {
+  font-family: -apple-system, HelveticaNeue-Light, Helvetica Neue Light,
+    Helvetica Neue, Helvetica, Roboto, Droid Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #1ba8ff;
+}
+
+.stardust-alphabet-scroll-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.stardust-alphabet-scroll-bar__letter {
+  color: #888;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.stardust-alphabet-scroll-bar__letter--active {
+  color: #333;
+  font-weight: 400;
+}
+
+.stardust-alphabet-scroll {
+  position: relative;
+}
+
+.stardust-alphabet-scroll__list {
+  overflow-y: auto;
+}
+
+.stardust-checkbox {
+  font-family: -apple-system, HelveticaNeue-Light, Helvetica Neue Light,
+    Helvetica Neue, Helvetica, Roboto, Droid Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  position: relative;
+  color: rgba(0, 0, 0, 0.54);
+  max-width: 400px;
+}
+
+.stardust-checkbox__input {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.stardust-checkbox__box {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  text-align: center;
+  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.02);
+  margin-right: 8px;
+}
+
+.stardust-checkbox__box:hover {
+  box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+.stardust-checkbox__box:before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 3px;
+  top: 3px;
+}
+
+.stardust-checkbox--disabled {
+  opacity: 0.35;
+  cursor: no-drop;
+}
+
+.stardust-checkbox--disabled .stardust-checkbox__box {
+  background: #e7e7e7 !important;
+  box-shadow: none !important;
+}
+
+.stardust-checkbox--disabled .stardust-checkbox__box:before {
+  border-color: transparent;
+}
+
+.stardust-checkbox--checked > .stardust-checkbox__box {
+  background: #1ba8ff;
+  border-color: #1ba8ff;
+}
+
+.stardust-checkbox--checked > .stardust-checkbox__box:hover {
+  box-shadow: none;
+}
+
+.stardust-checkbox--checked > .stardust-checkbox__box:before {
+  border-color: #fff;
+}
+
+.electrolyte-location-filter .stardust-dropdown__item-body--open {
+  overflow: visible;
+}
+
+.electrolyte-search-filter-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  height: 1.875rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.electrolyte-search-filter-status__text {
+  flex: 1;
+}
+
+.electrolyte-search-filter-status svg {
+  font-size: 0.75rem;
+  margin-right: 0.625rem;
+  stroke: currentColor;
+}
+
+.electrolyte-filter-panel {
+  flex: 0 0 11.875rem;
+  min-width: 0;
+  margin: 0 1.25rem 1.25rem 0;
+}
+
+.electrolyte-category-list__main-category__link,
+.electrolyte-category-list__sub-category {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  font-weight: 500;
+  align-items: flex-start;
+}
+
+.electrolyte-category-list {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.electrolyte-category-list__header {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  height: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  font-size: 1rem;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.625rem;
+  display: flex;
+  align-items: center;
+}
+
+.electrolyte-category-list__header-icon {
+  margin-right: 0.625rem;
+}
+
+.electrolyte-category-list__main-category,
+.electrolyte-category-list__sub-category {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  padding: 0.5rem 0.625rem 0.5rem 0.75rem;
+  position: relative;
+  line-height: 1rem;
+  max-height: 3rem;
+  word-wrap: break-word;
+}
+
+.electrolyte-category-list__main-category__caret,
+.electrolyte-category-list__sub-category__caret {
+  height: 7px;
+  width: 7px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+.electrolyte-category-list__main-category--active
+  .electrolyte-category-list__main-category__caret,
+.electrolyte-category-list__main-category--active
+  .electrolyte-category-list__sub-category__caret,
+.electrolyte-category-list__sub-category--active
+  .electrolyte-category-list__main-category__caret,
+.electrolyte-category-list__sub-category--active
+  .electrolyte-category-list__sub-category__caret {
+  opacity: 1;
+  fill: #1ba8ff;
+}
+
+.electrolyte-category-list__main-category {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.electrolyte-category-list__main-category--active
+  > .electrolyte-category-list__main-category__link {
+  color: #1ba8ff;
+}
+
+.electrolyte-category-list__main-category__link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+}
+
+.electrolyte-category-list__main-category__link--active {
+  color: #1ba8ff;
+}
+
+.electrolyte-category-list__sub-category {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+}
+
+.electrolyte-category-list__sub-category--active {
+  color: #1ba8ff;
+}
+
+.electrolyte-category-list__toggle-btn {
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.625rem 0.5rem 0.75rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.electrolyte-category-list__toggle-btn svg {
+  width: 0.4375rem;
+  height: 0.4375rem;
+  margin-left: 0.625rem;
+  fill: rgba(0, 0, 0, 0.8);
+}

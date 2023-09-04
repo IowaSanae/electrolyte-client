@@ -1,0 +1,62 @@
+.modal {
+  width: 800px;
+  height: 500px;
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-animation: popin 0.3s;
+  animation: popin 0.3s;
+}
+.modal-body {
+  padding: 0;
+  height: 100%;
+  font-size: 0.9em;
+}
+.page-product__breadcrumb {
+  margin-top: 1.25rem;
+  height: 1rem;
+}
+.category_link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+  color: #05a;
+}
+
+.xprSzi {
+  font-size: 0.625rem;
+  margin: 0 5px;
+}
+.electrolyte-svg-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  position: relative;
+}
+.KmiQIK {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dR8kXc {
+  display: flex;
+  margin-bottom: 1.125rem;
+}
+.zquA4o.eqeCX7 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.zquA4o {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  width: 8.75rem;
+  padding-right: 0.75rem;
+}

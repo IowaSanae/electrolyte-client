@@ -1,0 +1,70 @@
+.wrapper {
+  background-color: #FFF;
+  border-radius: 0.125rem;
+  overflow: hidden;
+  margin-top: 0.9375rem;
+  padding: 0.625rem;
+}
+.productDes_inner {
+  padding: 0.9375rem 0.9375rem 0;
+}
+.productDes-heading {
+  background: rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.125rem;
+  padding: 0.875rem;
+  text-transform: capitalize;
+}
+.productDes_container {
+  margin: 1.875rem 0.9375rem 0.9375rem;
+}
+.productDes-title {
+  display: flex;
+  margin-bottom: 1.125rem;
+}
+.productDes-title-detail span,
+.productDes-title-detail i {
+  margin-right: 5px;
+}
+.productDes-content-detail {
+  display: flex;
+  margin-bottom: 1.125rem;
+}
+.productDes-title label,
+.productDes-content-detail label {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.875rem;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 8.75rem;
+  padding-right: 0.75rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.productDes-detail p {
+  margin: 1.875rem 0.9375rem 0.9375rem;
+}
+.productDes-heading-des {
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.7rem;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+@media (min-width: 481px) and (max-width: 739px) {
+}
+@media only screen and (max-width: 880px) {
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100vw;
+  }
+  html {
+    font-size: 70%;
+  }
+}

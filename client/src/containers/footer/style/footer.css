@@ -1,0 +1,38 @@
+
+.Footer_heading {
+  font-weight: bold;
+  color: rgb(27, 168, 255);
+}
+.Footer_other_heading {
+  font-weight: bold;
+  color: rgb(27, 168, 255);
+  margin-top: 3vh;
+}
+.Footer_content{
+  line-height: 32px;
+}
+.Footer-map {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fa-footer{
+  color: rgb(27, 168, 255);
+}
+.Footer__bottom {
+  background-color: #f5f5f5;
+  padding: 8px 0;
+  margin-top: 32px;
+}
+.Footer__text {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  color: #939393;
+}

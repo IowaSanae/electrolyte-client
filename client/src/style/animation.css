@@ -1,0 +1,83 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes HeaderNOtifyGrowth {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+@keyframes mobileSearchSideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: var(--header-height);
+  }
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FFF;
+  margin: 10px auto 0;
+  box-shadow: 32px 0 #FFF, -32px 0 #FFF;
+  position: relative;
+  animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #fff2;
+    box-shadow: 32px 0 #fff2, -32px 0 #FFF;
+  }
+  50% {
+    background-color: #FFF;
+    box-shadow: 32px 0 #fff2, -32px 0 #fff2;
+  }
+  100% {
+    background-color: #fff2;
+    box-shadow: 32px 0 #fff, -32px 0 #fff2;
+  }
+}
+@keyframes addCart {
+  0% {
+    scale: 20%;
+    opacity: 0.8;
+    transform: translate(500px, 0px);
+  }
+  100% {
+    opacity: 0.1;
+    scale: 20%;
+    transform: translate(4500px, -1700px);
+  }
+}
+
+@keyframes mobileSearchSideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: var(--header-height);
+  }
+}
