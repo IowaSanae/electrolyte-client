@@ -29,7 +29,6 @@ export interface ProductDetail {
   currency?: string;
   stock?: number;
   sold?: number;
-  liked_count?: number;
   catid?: number;
   cmt_count?: number;
   discount?: string;
@@ -54,7 +53,6 @@ export interface ProductDetail {
   liked?: number;
   ctime?: Date;
   show_free_shipping?: number;
-  is_video?: number;
   is_attributes?: number;
   description?: string;
   categories?:

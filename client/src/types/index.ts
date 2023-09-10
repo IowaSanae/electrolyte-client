@@ -8,7 +8,6 @@ export interface cart {
   sold: number;
   historical_sold: any;
   liked: any;
-  liked_count: null | number;
   view_count: any;
   price: number;
   price_min: number;

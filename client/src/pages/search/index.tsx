@@ -37,7 +37,7 @@ function Search() {
                   <div className="col l-2 col-sm-3 c-3 Hide-on-mobile">
                     <SearchFilter />
                   </div>
-                  <div className="col l-10">
+                  <div className="col l-12">
                     <div className="padding-search mob:pt-[50px] mob:hidden block"></div>
                     <ProductList items={data?.response?.rows || []} col={'col l-2-4 mo-4 c-6'} loading={isLoading} />
                     <Pagination setPayload={setPayload} totalPage={totalPage} />

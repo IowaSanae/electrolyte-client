@@ -253,7 +253,7 @@ function Profile() {
                       <div className="flex items-center gap-[20px] w-full">
                         <div className="flex items-center gap-[20px] h-full w-full">
                           <input
-                            placeholder={payload?.phone !== undefined ? payload.phone.toString() : undefined}
+                            placeholder={payload?.phone !== undefined ? payload?.phone?.toString() : undefined}
                             onChange={(e) => {
                               setPayload((prev: any) => {
                                 return {
